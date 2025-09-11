@@ -38,8 +38,9 @@
             font-size: 1.1em;
         }
         .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Tự động căn giữa các nút */
             gap: 20px;
             margin-bottom: 30px;
         }
@@ -53,6 +54,7 @@
             border-radius: 10px;
             background-color: #f8f9fa;
             transition: transform 0.2s, box-shadow 0.2s;
+            flex-basis: 180px; /* Đặt chiều rộng cơ bản cho mỗi nút */
         }
         .icon-item:hover {
             transform: translateY(-5px);
@@ -101,8 +103,7 @@
 <div class="container">
     <div class="header">
         <h1>
-		SỞ GIÁO DỤC VÀ ĐÀO TẠO ĐẮK LẮK
-	<BR>	TRƯỜNG THPT SỐ 1 TRẦN PHÚ
+		TRƯỜNG THPT SỐ 1 TRẦN PHÚ, ĐẮK LẮK
 	</h1>
     </div>
 
@@ -111,15 +112,31 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
             </svg>
-            <span>Xem Lịch Làm Việc</span>
+            <span>Lịch làm việc</span>
         </a>
-
+        
         <a href="https://tranhongdan.github.io/tkb/" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M3.5 3.5A.5.5 0 0 1 4 4h1.5a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5zM5 6a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5z"/>
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
             </svg>
-            <span>Tra Cứu TKB</span>
+            <span>Tra cứu TKB</span>
+        </a>
+
+        <a href="https://docs.google.com/spreadsheets/d/1DfSN6XUFXBw4W-3k4u5bRllGNOiB9biZy4d8XDXYTis/edit#gid=445768553" target="_blank" class="icon-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
+              <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+            <span>Lịch dạy thay</span>
+        </a>
+        
+        <a href="https://tranhongdan.github.io/phancongdaythay/" target="_blank" class="icon-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+              <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+            <span>Phân công dạy thay</span>
         </a>
 
         <a href="https://forms.gle/YCwAPTBTW67m3TLC9" target="_blank" class="icon-item">
@@ -127,7 +144,7 @@
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                 <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
             </svg>
-            <span>Nộp Đề Thi & KTĐG</span>
+            <span>Nộp đề thi và KTĐG</span>
         </a>
 
         <a href="https://docs.google.com/spreadsheets/d/1BxPSMqMWVqQIgHcLo5ThGAUsqAjPfOu9UJzZEacQ1gQ/edit?usp=sharing" target="_blank" class="icon-item">
@@ -135,13 +152,13 @@
                  <path d="M5 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2-1a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm10-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2-1a2 2 0 1 0 4 0 2 2 0 0 0-4 0zM5 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM3 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
                  <path d="M2 1.5a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-12zM1 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-11z"/>
             </svg>
-            <span>Xem Tiến Độ Nộp Đề</span>
+            <span>Xem tiến độ nộp đề</span>
         </a>
     </div>
 
     <div class="notes-section">
-        <label for="user-notes">GHI CHÚ CÁ NHÂN</label>
-        <textarea id="user-notes" placeholder="Nhập nội dung ghi chú cá nhân..."></textarea>
+        <label for="user-notes">Ghi Chú Cá Nhân</label>
+        <textarea id="user-notes" placeholder="Nội dung bạn nhập ở đây sẽ được tự động lưu lại..."></textarea>
     </div>
     
     <footer>
@@ -154,25 +171,18 @@
     const notesTextarea = document.getElementById('user-notes');
 
     // 1. TẢI GHI CHÚ KHI MỞ TRANG
-    // Sự kiện 'DOMContentLoaded' đảm bảo mã chỉ chạy sau khi toàn bộ trang đã được tải xong
     document.addEventListener('DOMContentLoaded', () => {
-        // Lấy ghi chú đã lưu từ localStorage với key là 'savedNote'
         const savedNote = localStorage.getItem('savedNote');
-
-        // Nếu có ghi chú đã lưu, hiển thị nó trong textarea
         if (savedNote) {
             notesTextarea.value = savedNote;
         }
     });
 
     // 2. LƯU GHI CHÚ KHI NGƯỜI DÙNG NHẬP
-    // Sự kiện 'input' được kích hoạt mỗi khi có sự thay đổi trong ô textarea
     notesTextarea.addEventListener('input', () => {
-        // Lưu nội dung hiện tại của textarea vào localStorage
         localStorage.setItem('savedNote', notesTextarea.value);
     });
 </script>
 
 </body>
-
 </html>
