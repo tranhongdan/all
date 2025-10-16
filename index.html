@@ -41,20 +41,23 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center; /* Tự động căn giữa các nút */
-            gap: 20px;
+            gap: 15px; /* Giảm khoảng cách giữa các icon */
             margin-bottom: 30px;
         }
         .icon-item {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center; /* Căn giữa nội dung bên trong icon */
             text-decoration: none;
             color: #333;
-            padding: 20px;
+            padding: 15px; /* Giảm padding */
             border-radius: 10px;
             background-color: #f8f9fa;
             transition: transform 0.2s, box-shadow 0.2s;
-            flex-basis: 180px; /* Đặt chiều rộng cơ bản cho mỗi nút */
+            flex-basis: 150px; /* Đặt chiều rộng cơ bản cho mỗi nút nhỏ hơn */
+            height: 140px; /* Đặt chiều cao cố định */
+            box-sizing: border-box;
         }
         .icon-item:hover {
             transform: translateY(-5px);
@@ -62,13 +65,13 @@
             color: #0056b3;
         }
         .icon-item svg {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 15px;
+            width: 45px; /* Giảm kích thước SVG */
+            height: 45px; /* Giảm kích thước SVG */
+            margin-bottom: 10px; /* Giảm khoảng cách dưới SVG */
             color: #007bff;
         }
         .icon-item span {
-            font-size: 1em;
+            font-size: 0.95em; /* Giảm cỡ chữ một chút */
             font-weight: 500;
         }
         .notes-section {
@@ -114,7 +117,6 @@
             </svg>
             <span>Lịch làm việc</span>
         </a>
-        
         <a href="https://tranhongdan.github.io/tkb/" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M3.5 3.5A.5.5 0 0 1 4 4h1.5a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5zM5 6a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5z"/>
@@ -122,7 +124,6 @@
             </svg>
             <span>Tra cứu TKB</span>
         </a>
-
         <a href="https://docs.google.com/spreadsheets/d/1DfSN6XUFXBw4W-3k4u5bRllGNOiB9biZy4d8XDXYTis/edit#gid=445768553" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
               <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
@@ -130,7 +131,6 @@
             </svg>
             <span>Lịch dạy thay</span>
         </a>
-        
         <a href="https://tranhongdan.github.io/phancongdaythay/" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
               <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
@@ -138,21 +138,36 @@
             </svg>
             <span>Phân công dạy thay</span>
         </a>
-
+        
         <a href="https://forms.gle/YCwAPTBTW67m3TLC9" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                 <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
             </svg>
-            <span>Nộp đề thi và KTĐG</span>
+            <span>Nộp đề thi & KTĐG</span>
         </a>
-
         <a href="https://docs.google.com/spreadsheets/d/1BxPSMqMWVqQIgHcLo5ThGAUsqAjPfOu9UJzZEacQ1gQ/edit?usp=sharing" target="_blank" class="icon-item">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                  <path d="M5 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2-1a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm10-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-2-1a2 2 0 1 0 4 0 2 2 0 0 0-4 0zM5 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM3 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
                  <path d="M2 1.5a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-12zM1 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-11z"/>
             </svg>
-            <span>Xem tiến độ nộp đề</span>
+            <span>Tiến độ nộp đề</span>
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUI5xF-MX7UK-hMHlaoXLHA98ciGC59qz-zrQIDSYlMJN6rQ/viewform?usp=sharing" target="_blank" class="icon-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+            </svg>
+            <span>ĐK thiết bị TN</span>
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1mS5tKtvoJbSgCGlAqy5iareSSsVk5uS9BcwC5-Lacw8/edit?usp=sharing" target="_blank" class="icon-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg>
+            <span>Lịch dùng PTN</span>
         </a>
     </div>
 
